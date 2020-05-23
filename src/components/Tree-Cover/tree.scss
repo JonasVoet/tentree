@@ -1,0 +1,70 @@
+section {
+    .treesplanted {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 70px 0;
+
+        text-align: center;
+        padding: 105px 0;
+        background-color: #fff;
+        background-image: url(https://cdn.shopify.com/s/files/1/0269/9437/6781/t/6/assets/pattern@2x.png?v=9305949670093993828);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .dark-theme {
+        background-color: #0a282b;
+        background-image: url(https://cdn.shopify.com/s/files/1/0269/9437/6781/t/6/assets/pattern-alt@2x.png?v=14878407105896286884);
+    }
+
+    .content {
+        width: 700px;
+        max-width: 100%;
+        margin: 0 auto 2rem;
+
+        img {
+            width: auto;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+        }
+        p.offset-0 {
+            color: white;
+            margin-bottom: 15px;
+            margin: 13px 0 0 0px;
+            line-height: 20px;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.5px;
+            font-size: 1.3em;
+        }
+
+        p {
+            color: white;
+            margin-bottom: 15px;
+            line-height: 27px;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            font-size: 1.3em;
+        }
+    }
+}
+
+
+@media (min-width: 790px) {
+.treesplanted {
+    min-height: 770px;
+}
+
+.treesplanted h2 {
+    font-size: 80px;
+    line-height: 109px;
+    letter-spacing: 0;
+    padding-bottom: 4px;
+    color: white;
+}
+
+}

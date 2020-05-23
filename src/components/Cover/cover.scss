@@ -1,0 +1,129 @@
+
+section.cover-container {
+    
+  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 70px 0;
+    background-color: #757575;
+
+
+
+.content-img {
+    background: url(../../images/cover-img.jpg) center center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.25);
+    transition: background-color .2s ease;
+    z-index: 3;
+    
+}
+
+.text-section {
+    width: 660px;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: 5;
+    position: relative;
+}
+
+.container {
+    width: 1200px;
+
+}
+
+.text-container {
+    margin: 0 auto;
+    width: 1550px;
+    max-width: 100%;
+    padding: 0 20px;
+
+    h1 {
+    font-size: 60px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    padding-bottom: 14px;
+    font-weight: 500;
+    color: #fff;
+    }
+
+    p {
+    margin: 13px 0 0 0px;
+    line-height: 20px;
+    font-size: 1.2em;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    }
+}
+
+
+}
+
+.btn-flex {
+    min-width: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0 -10px;
+
+    .btn {
+        text-align: center;
+    display: inline-block;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    font-family: 'merlo_neue_round';
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    color: #fff;
+    background-color: #0a282b;
+    transition: all .25s ease;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    border: 2px solid #0a282b;
+    cursor: pointer;
+    min-width: 200px;
+    text-decoration: none;
+    margin-top: 1.4rem;
+    }
+
+}
+
+@media (min-width: 790px) {
+ .cover-container {
+    min-height: 740px;
+}
+
+.flex-item:first-of-type {
+    text-align: right;
+}
+
+.flex-item {
+    width: 50%;
+    flex-basis: 45%;
+}
+
+
+
+}

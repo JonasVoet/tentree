@@ -1,0 +1,180 @@
+.cta-section.category-grid {
+    position: relative;
+    background-color: #fff;
+
+    text-align: center;
+    padding: 70px 0;
+    background-color: #deded9;
+
+    .category-grid .category-grid__background {
+    background: #ffffff url(https://cdn.shopify.com/s/files/1/0269/9437/6781/t/6/assets/cat-bg@2x.jpg?v=1083390928074356170) top center no-repeat;
+    background-size: cover;
+
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 672px;
+        position: absolute;
+    }
+
+    .category-grid__foreground {
+        z-index: 5;
+        position: relative;
+
+        text-align: center;
+        padding: 70px 0;
+        background-color: #deded9;
+
+    }
+
+    .br-container.container-1200 {
+        width: 1200px;
+    }
+
+    .br-container {
+        margin: 0 auto;
+        width: 1550px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-size: 48px;
+        line-height: 54px;
+        padding-bottom: 12px;
+
+        display: block;
+        position: relative;
+        margin: 0;
+        letter-spacing: 0;
+        color: #0a282b;
+        font-weight: 500;
+
+        
+    }
+
+    p {
+        margin-bottom: 40px;
+        color: #4d4d4d;
+        font-size: 1.3em;
+    }
+
+    
+}
+
+.cta-section.category-grid {
+    text-align: center;
+    padding: 70px 0;
+    background-color: #deded9;
+}
+
+.grid.justify--center {
+    justify-content: center;
+}
+.grid {
+    min-width: 100%;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0 -10px;
+}
+
+
+.cta-section.category-grid .category__link {
+    display: block;
+    background: #757575;
+}
+
+.cta-section.category-grid .category__block {
+    width: 100%;
+    overflow: hidden;
+    min-height: 560px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.category__image {
+    background: url(https://cdn.shopify.com/s/files/1/0269/9437/6781/files/SU20_SummerCollection_HomepageCategoryTiles_Mens.progressive.jpg?v=1588761474) center center no-repeat;
+    background-size: cover;
+}
+
+
+
+#img:nth-child(2) {
+    background: url(https://cdn.shopify.com/s/files/1/0269/9437/6781/files/SU20_SummerCollection_HomepageCategoryTiles_Womens.progressive.jpg?v=1588761473) center center no-repeat;
+}
+
+
+
+
+.cta-section.category-grid .category__block .category__image {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    transition: transform .5s ease;
+    will-change: transform;
+}
+
+
+ .cta-section.category-grid .category__block .category__image:after {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: block;
+    position: absolute;
+    background: rgba(0,0,0,0.25);
+    transition: background .35s ease;
+}
+
+.cta-section.category-grid .category__block h3 {
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.category__link {
+    text-decoration: none;
+
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 790px) {
+     .cta-section.category-grid {
+        padding: 50px 0 0;
+    }
+
+
+.grid__item.lg-one-third {
+    width: 33.3334%;
+    flex-basis: 33.3334%;
+}
+}
