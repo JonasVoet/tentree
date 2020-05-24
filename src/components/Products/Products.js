@@ -4,33 +4,39 @@ import axios from 'axios';
 import './products.scss';
 
 const Products = () => {
-    const [product, setProduct] = useState({});
+    const [products, setProducts] = useState({});
     
   
       useEffect(() => {
         axios.get('http://localhost:3000/products')
             .then(res => {
                 console.log(res);
-                setProduct(res.data);
+                setProducts(res.data);
             });
     }, []);
 
-    const oneProduct = product ? (
+    const productList = products.length ? (
+        products.map(product => {
 
+            return (
+                
          <div className="product_inside">
-             <div className="image-box petetest">
-             <img src={`http://localhost:3000/${product.productImage}`} alt="product" className="lazyloaded" />
-             </div>
+         <div className="image-box petetest">
+         <img src={`http://localhost:3000/${product.productImage}`} alt="product" className="lazyloaded" />
+         </div>
 
-        <h2 className="title">{product.title}</h2>
-        <div className="price">{product.price}</div>
-         </div> 
+    <h2 className="title">{product.title}</h2>
+    <p className="price">£{product.price}</p>
+     </div> 
+     )
+    })
 
-    ) : (
-        <div className="container">
-                <div className="text-center">Loading Product...</div>
-            </div>
-    )
+) : (
+    <div className="container">
+            <div className="text-center">Loading Product...</div>
+        </div>
+)
+           
 
 
     return (
@@ -54,7 +60,7 @@ const Products = () => {
                     <li id="collection1Content" className="active">
                         <div className="row">
                             <div className="product">
-                            {oneProduct}
+                            {productList}
                                
                             </div>
                         </div>
